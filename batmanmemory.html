@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+  <link rel="stylesheet" href="batmanmemory.css">
+  <title>Batman Memory Game</title>
+</head>
+<body>
+
+  <section class="container">
+    <!-- header Batman Memory Game This doesn't need to change-->
+    <header>
+      <h1>BATMAN MEMORY GAME</h1>
+    </header>
+
+    <!--the sub header includes the rank, the number of moves, timer, and the reset -->
+    <section class="subHeader">
+      <!-- the bat symbol rank 1 - 3 -->
+      <img src="batmanCharacters/batSymbolYellow.png" alt="bat symbol" class="batSymbol">
+      <img src="batmanCharacters/batSymbolYellow.png" alt="bat symbol" class="batSymbol">
+      <img src="batmanCharacters/batSymbolYellow.png" alt="bat symbol" class="batSymbol">
+      <!-- move number, time, and reset -->
+      <span class="moveNumber"></span>
+      <span class="moveId">MOVES</span>
+      <span class="reset"><i class="fas fa-redo-alt"></i></span>
+      <span>TIME: <span class="timer"></span></span>
+    </section>
+
+
+    <!-- the playing pieces set 1-->
+    <section class="squares">
+      <div class="square" data-cardid="batgirl">
+        <img src="batmanCharacters/batgirl.png" class="front" alt="batgirl">
+        <img src="batmanCharacters/batSymbol.png" class="back" alt="bat symbol">
+      </div>
+
+      <div class="square" data-cardid="batman">
+        <img src="batmanCharacters/batman.png" class="front" alt="batman">
+        <img src="batmanCharacters/batSymbol.png" class="back" alt="bat symbol">
+      </div>
+
+      <div class="square" data-cardid="harleyquin">
+        <img src="batmanCharacters/harleyQuin.png" class="front" alt="harley quin">
+        <img src="batmanCharacters/batSymbol.png" class="back" alt="bat symbol">
+      </div>
+
+      <div class="square" data-cardid="ivy">
+        <img src="batmanCharacters/ivy.png" class="front" alt="poison ivy">
+        <img src="batmanCharacters/batSymbol.png" class="back" alt="bat symbol">
+      </div>
+
+      <div class="square" data-cardid="joker">
+        <img src="batmanCharacters/joker.png" class="front" alt="joker">
+        <img src="batmanCharacters/batSymbol.png" class="back" alt="bat symbol">
+      </div>
+
+      <div class="square" data-cardid="mrfreeze">
+        <img src="batmanCharacters/mrFreeze.png" class="front" alt="mr freeze">
+        <img src="batmanCharacters/batSymbol.png" class="back" alt="bat symbol">
+      </div>
+
+      <div class="square" data-cardid="riddler">
+        <img src="batmanCharacters/riddler.png" class="front" alt="riddler">
+        <img src="batmanCharacters/batSymbol.png" class="back" alt="bat symbol">
+      </div>
+
+      <div class="square" data-cardid="robin">
+        <img src="batmanCharacters/robin.png" class="front" alt="robin">
+        <img src="batmanCharacters/batSymbol.png" class="back" alt="bat symbol">
+      </div>
+
+      <!-- the playing pieces set 2-->
+      <div class="square" data-cardid="batgirl">
+        <img src="batmanCharacters/batgirl.png" class="front" alt="batgirl">
+        <img src="batmanCharacters/batSymbol.png" class="back" alt="bat symbol">
+      </div>
+
+      <div class="square" data-cardid="batman">
+        <img src="batmanCharacters/batman.png" class="front" alt="batman">
+        <img src="batmanCharacters/batSymbol.png" class="back" alt="bat symbol">
+      </div>
+
+      <div class="square" data-cardid="harleyquin">
+        <img src="batmanCharacters/harleyQuin.png" class="front" alt="harley quin">
+        <img src="batmanCharacters/batSymbol.png" class="back" alt="bat symbol">
+      </div>
+
+      <div class="square" data-cardid="ivy">
+        <img src="batmanCharacters/ivy.png" class="front" alt="poison ivy">
+        <img src="batmanCharacters/batSymbol.png" class="back" alt="bat symbol">
+      </div>
+
+      <div class="square" data-cardid="joker">
+        <img src="batmanCharacters/joker.png" class="front" alt="joker">
+        <img src="batmanCharacters/batSymbol.png" class="back" alt="bat symbol">
+      </div>
+
+      <div class="square" data-cardid="mrfreeze">
+        <img src="batmanCharacters/mrFreeze.png" class="front" alt="mr freeze">
+        <img src="batmanCharacters/batSymbol.png" class="back" alt="bat symbol">
+      </div>
+
+      <div class="square" data-cardid="riddler">
+        <img src="batmanCharacters/riddler.png" class="front" alt="riddler">
+        <img src="batmanCharacters/batSymbol.png" class="back" alt="bat symbol">
+      </div>
+
+      <div class="square" data-cardid="robin">
+        <img src="batmanCharacters/robin.png" class="front" alt="robin">
+        <img src="batmanCharacters/batSymbol.png" class="back" alt="bat symbol">
+      </div>
+    </section>
+
+    <!-- Modal -->
+    <section class="modal">
+      <div class="modalContent">
+        <h1>Congratulations!</h1>
+        <p>You got <span class="batNumber">3</span> bats out of three.</p>
+        <p>Your time was <span class="finalTime">time</span></p>
+        <button class="playAgain">Play Again</button>
+        <p class="closeModal">Close</p>
+      </div>
+    </section>
+  </section>
+
+  <!-- Javascript -->
+  <script src="batmanmemory.js"></script>
+</body>
+
+</html>

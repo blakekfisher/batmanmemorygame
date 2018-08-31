@@ -1,4 +1,4 @@
-#Memory Game Project#
+# Memory Game Project
 
 
 **Table of Contents**
@@ -30,7 +30,7 @@ I started by breaking down the project into small chunks or problems. As per the
 
 I also completed Colt Steele's Web Developer Course on Udemy (https://www.udemy.com/the-web-developer-bootcamp/) to fill in gaps.
 
-*Bugs*
+**Bugs**
 -I read that `setInterval` is not an very accurate way to keep time. I did have points where my clock would speed up but I think I have fixed it. This is something to explore in the future.
 -Sometimes cards don't flip if the mouse if clicked to quickly.
 -TODO images need to scale better at smaller sizes.
